@@ -1,0 +1,47 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">پنل امور شعب </a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu ps-2 m-2" aria-hidden="true"></span>
+                داشبورد
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="customers">
+                <span class="bi bi-plus-square-fill-nav-menu ps-2 m-2" aria-hidden="true"></span>
+                مدیریت مشتریان
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="providers">
+                <span class="bi bi-list-nested-nav-menu ps-2 m-2" aria-hidden="true"></span>
+                مدیریت پذیرندگان
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="tickets">
+                <span class="bi bi-list-nested-nav-menu ps-2 m-2" aria-hidden="true"></span>
+                پشتیبانی
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="sign-out">
+                <span class="bi bi-box-arrow-right ps-2 m-2" aria-hidden="true"></span>
+               خروج
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
