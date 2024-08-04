@@ -1,0 +1,40 @@
+﻿
+<div class="col">
+    @if (message is not null)
+    {
+        <br/>
+        <p>@message</p>
+    }
+
+    <p> <button class="btn btn-sm btn-danger m-1" @onclick="UpdateText">نشان دادن تاریخ و زمان</button></p>
+    <p> <button class="btn btn-sm btn-primary m-1" @onclick="(()=> UpdateTextNumber(1))">نمایش شماره یک </button></p>
+</div>
+
+<div class="col">
+    <ul>
+        @for (int i = 1; i <= 5; i++)
+        {
+            int tempNumber = i;
+            @* <li>@GetNumberGext(i)</li> *@
+            <li><button class="btn btn-sm btn-outline-info m-2" @onclick="(()=> UpdateTextNumber(tempNumber))">نمایش شماره</button></li>
+        }
+    </ul>
+
+</div>
+
+@code {
+    private string? message;
+
+    private void UpdateText()
+    {
+        message = " زمان: " + DateTime.Now.ToString();
+    }
+
+    private void UpdateTextNumber(int i)
+    {
+        message = " شماره: " + i;
+    }
+
+    private string GetNumberGext(int i) => "شماره : " + i;
+
+}

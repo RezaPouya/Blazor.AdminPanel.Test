@@ -1,0 +1,13 @@
+﻿
+<p role="status">
+    <button class="btn btn-sm btn-primary m-2" @onclick="IncrementCount">افزایش شماره</button>
+    شماره: @currentCount
+    </p>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount() => currentCount++;
+}
+
+
